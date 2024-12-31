@@ -1,0 +1,199 @@
+/* Media query */
+
+@media (min-width: 64em) {
+    .more-pc-hide {
+        display: none;
+    }
+
+    .header .menu-bar {
+        display: none;
+    }
+
+    .header .search-box {
+
+    }
+
+    .content .band-members {
+        float: left;
+    }
+
+}
+
+@media (max-width: 63.9375em) {
+    .place-btn {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .information {
+        margin-bottom: 10px;
+    }
+
+    .bottom-submit,
+    .form-control {
+        padding: 15px;
+        /* font-size: large; */
+    }
+
+    .social {
+        font-size: 50px;
+        margin: 0 10px;
+    }
+
+    .copyright a {
+        padding: 15px 0;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) {
+    .row {
+
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content .content-heading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .more-pc-hide {
+        display: none;
+    }
+
+    .header .menu-bar {
+        display: none;
+    }
+}
+
+@media (max-width: 47.9375em) {
+    .header {
+        overflow: hidden;
+        /* position: fixed; */
+    }
+
+    .home-mobile-header {
+        
+    }
+
+    .nav .home-mobile-hide {
+        display: block;
+    }
+
+    .nav {
+        position: relative;
+        display: block;
+        /* width: fit-content; */
+    }
+
+    .nav > li {
+        /* display: inline-block; */
+        /* height: 50px; */
+    }
+
+    .nav .subnav {
+        position: initial;
+        box-shadow: none;
+    }
+
+    .nav .subnav li {
+        width: 100%
+    }
+
+    .nav .subnav a {
+        background-color: #999999;
+        color: white;
+        padding-left: 40px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .menu-bar {
+        /* position: absolute; */
+        /* float: right !important; */
+        /* display: inline-block; */
+    }
+
+    .thumbnail {
+        display: none !important;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content .content-heading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .list-members {
+        display: block !important;
+    }
+
+    .band-members {
+        text-align: center;
+    }
+    
+    .member-img {
+        width: 80%;
+        margin: 5px 0 20px 0;
+    }
+
+    .places {
+        margin-top: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        /* text-align: center; */
+    }
+
+    .location-tour {
+        /* float: none; */
+        width: 100% !important;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 20px;
+        /* height: 500px; */
+    }
+
+    .place-img {
+        height: 25vh;
+    }
+
+    .place-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom-submit,
+    .band-information {
+        width: 100%;
+    }
+
+    .box-typing,
+    .fan-info {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

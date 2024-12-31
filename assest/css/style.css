@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 500; */
+    /* background-color: aquamarine; */
+}
+
+*::selection {
+    background-color: deeppink !important;
+    color: white !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row::after {
+    content: "";
+    display: block !important;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    float: left;
+    width: 50%;
+}
+
+/* main */
+
+.main {
+    /* height: 10000px; */
+    /* overflow: hidden; */
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+.nav .more-mobile-hide {
+
+}
+
+.nav, .subnav {
+    list-style-type: none;
+}
+
+.nav {
+    display: inline-block;
+    background-color: black;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+    display: inline-block;
+}
+
+.nav li a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+}
+
+.nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav > li:hover > a,
+.nav > li:hover > a i,
+.nav .subnav > li:hover a {
+    background-color: #cccccc;
+    color: black;
+    /* display: inline-block; */
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav {
+    display: none;
+    /* width: auto; */
+    top: 100%;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav .subnav a {
+    color: black;
+    background-color: white;
+    padding: 0, 20px;
+}
+
+.nav .subnav li {
+    background-color: white;
+    width: auto;
+    display: block;
+}
+
+.nav .fa-sort-down {
+    font-size: 16px;
+    /* color: white; */
+}
+
+.header .menu-bar,
+.header .search-box {
+    position: absolute;
+    background-color: black;
+    float: right;
+    padding: 0 20px;
+    top: 0;
+    right: 0;
+}
+
+.header .fa-bars,
+.header .fa-magnifying-glass {
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+    background-color: black;
+}
+
+.header .search-box:hover i,
+.header .search-box:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.header .menu-bar:hover i,
+.header .menu-bar:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.slider {
+    margin-top: 50px;
+    /* background: url('https://www.w3schools.com/w3images/la.jpg') no-repeat top center / cover; */
+    background: url('../img/abstract_light_bulb-wallpaper-1920x1080.jpg') no-repeat top center / cover;
+    padding-top: 50%;
+    position: relative;
+}
+
+.slider .thumbnail {
+    position: absolute;
+    color: white;
+    bottom: 50px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 1px black;
+}
+
+.slider .thumbnail h3 {
+    margin-top: 20px;
+}
+
+.content {
+    /* margin-top: 80px; */
+    /* position: relative; */
+}
+
+.content .content-heading {
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+    /* margin-top: 80px;
+    margin-bottom: 80px; */
+    padding: 80px 0;
+}
+
+.content .section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.content .content-heading .section-decript {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.about-text {
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.content .list-members {
+    margin: 50px;
+    display: flex;
+    overflow: hidden;
+}
+
+.content .band-members {
+    /* display: inline-block; */
+    /* float: left; */
+    margin: auto;
+}
+
+.name-member {
+    text-align: center;
+    padding: 10px;
+}
+
+.member-img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.tour-section {
+    background-color: black;
+}
+
+.month-ticket {
+    background-color: white;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.month-ticket li {
+    padding: 12px;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    /* opacity: 0.5; */
+    color: #999999;
+}
+
+.sold-out {
+    background-color: red;
+    padding: 3px 5px;
+    margin-left: 12px;
+}
+
+.ticket-quantity {
+    width: 24px;
+    height: 24px;
+    float: right;
+    /* margin-right: ; */
+    background-color: black;
+    border-radius: 100%;
+    line-height: 24px;
+    text-align: center;
+    margin: -3px 12px;
+}
+
+.places {
+    /* margin: 20px -10px 50px; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.places .location-tour {
+    /* display: inline-block; */
+    /* float: left; */
+    /* padding: 0 10px; */
+    width: calc(100% / 3);
+}
+
+.place-img {
+    display: block;
+    width: 100%;
+    height: 15vh;
+
+}
+
+.place-img:hover {
+    opacity: 0.5;
+}
+
+.place-content {
+    background-color: white;
+    padding: 20px;
+}
+
+.place-heading {
+
+}
+
+.place-time {
+    color: #999999;
+    margin-top: 15px;
+}
+
+.place-decription {
+    margin-top: 15px;
+    /* line-height: 1.4; */
+}
+
+.place-btn {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.place-btn:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.contact-fan-info {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.band-information {
+    list-style-type: none;
+    display: block;
+}
+
+.information { /* i[class*="fa-"] */
+    margin: 0;
+    padding: 5px 10px 5px 0;
+}
+
+.box-typing {
+    /* font-size: 20px; */
+}
+
+.name-mail {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    width: 100%;
+    outline: none;
+}
+
+.bottom-submit {
+    float: right;
+    border: 1px solid #cccccc;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.bottom-submit:hover {
+    background-color: #cccccc;
+    color: black;
+    cursor: pointer;
+}
+
+.map-content {
+    background: url('./img/map.jpg') no-repeat top center / cover;
+    width: 100%;
+}
+
+/* .container {
+
+} */
+
+.footer {
+    padding: 80px 0;
+    /* font-size: 20px; */
+    text-align: center;
+}
+
+.social .fa-brands {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.social .fa-brands:hover, .copyright a:hover {
+    color: #999999;
+}
+
+.copyright {
+
+}
+
+.copyright a {
+    color: deeppink;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
